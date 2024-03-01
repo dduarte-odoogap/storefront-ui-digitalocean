@@ -87,8 +87,11 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     redis: {
-      host: 'localhost',
-      port: 6379,
+      host: process.env.REDIS_HOST,
+      port: process.env.REDIS_PORT,
+      password: process.env.REDIS_PASSWORD,
+      user: process.env.REDIS_USER,
+      tls: {}
     },
     public: {
       odooBaseImageUrl: '',

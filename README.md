@@ -7,6 +7,7 @@ Template base to start new odoo vsf projects using vsf SDK
 1. Nuxt 3
 2. VSF 2
 3. SFUI-2
+4. Odoo
 
 
 ## How to start ?
@@ -17,4 +18,3 @@ Template base to start new odoo vsf projects using vsf SDK
 4. yarn dev
 5. You can access with http://localhost:3000
 ```
-

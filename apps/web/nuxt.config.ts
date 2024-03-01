@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+console.log('nuxt.config.ts process.env.REDIS_URL ::: ' + process.env.REDIS_URL);
 export default defineNuxtConfig({
   app: {
     head: {

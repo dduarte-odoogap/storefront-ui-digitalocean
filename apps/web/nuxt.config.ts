@@ -83,16 +83,9 @@ export default defineNuxtConfig({
     ],
   },
   devtools: {
-    enabled: true,
+    enabled: false,
   },
   runtimeConfig: {
-    redis: {
-      host: process.env.REDIS_HOST,
-      port: process.env.REDIS_PORT,
-      password: process.env.REDIS_PASSWORD,
-      user: process.env.REDIS_USER,
-      tls: {}
-    },
     public: {
       odooBaseImageUrl: '',
       odooBaseUrl: '',
@@ -116,11 +109,13 @@ export default defineNuxtConfig({
     storage: {
       cache: {
         driver: 'redis',
+        url: process.env.REDIS_URL,
       },
     },
     devStorage: {
       cache: {
         driver: 'redis',
+        url: process.env.REDIS_URL,
       },
     },
   },
